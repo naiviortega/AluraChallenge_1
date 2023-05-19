@@ -1,0 +1,251 @@
+body {
+    background-color: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 40px;
+}
+
+.logo {
+    grid-column: 1;
+    grid-row: 1;
+    background-image: url(Images/Logo.png);
+    background-repeat: no-repeat;
+    background-position: revert;
+    padding-left: 44px;
+    margin-left: 44px;
+}
+
+.conversion {
+    grid-column: 2 / span 5;
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.conversion-texto {
+    grid-row: 2 / span 5;
+    padding: 30px 40px 0 40px;
+}
+
+#conversion-text {
+    font-size: 32px;
+    color: #0A3871;
+    border: none;
+    background-color: transparent;
+    width: 690px; 
+    font-family: 'Inter', sans-serif;
+    resize: none;
+    line-height: 150%;
+    height: 550px;
+}
+
+.conversion-info {
+    font-size: 12px;
+    color: #495057;
+    grid-row: 7/8;
+    padding-left: 30px;
+    align-self: end;
+    width: fit-content;
+}
+
+.conversion-botones {
+    display: inline-block;
+    grid-row: 8/8;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    margin: auto 0;
+}
+
+.conversion-info:before {
+    content: "\2139";
+    font-size: 16px;
+    vertical-align: text-bottom;
+    color: #65747D;
+    margin-right: 8px;
+}
+
+.conversion-en, .conversion-des, .resultado-copiar {
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+.conversion-en {
+    color: white;
+    background-color: #0A3871;
+    margin-right: 24px;
+}
+
+.conversion-des {
+    color: #0A3871;
+    background-color: #D8DFE8;
+}
+
+.resultado {
+    width: 400px;
+    height: 944px;
+    border-radius: 32px;
+    grid-column: 7 / span 2;
+    grid-row: 1;
+    background-color: white;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+    display: table;
+}
+
+.resultado-info {
+    margin: 0 auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.resultado-mensaje, .resultado-indicacion {
+    width: 336px;
+    margin: 0 auto;
+}
+
+.resultado-mensaje {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 32px;
+}
+
+.resultado-indicacion {
+    padding-top: 16px;
+}
+
+.resultado-conversion {
+    margin: 0 auto;
+    padding: 32px;
+    text-align: center;
+    display: none;
+}
+
+.resultado-texto {
+    height: 781px;
+    text-align: left;
+    font-size: 24px;
+    line-height: 150%;    
+    padding-bottom: 32px;
+}
+
+.resultado-copiar {    
+    color: #0A3871;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    body {
+        max-width: 768px;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 688px);
+        grid-template-rows: repeat(auto-fill, 100px);
+    }
+
+    .logo {
+        width: 688px;
+        margin-left: 0;
+    }
+
+    .conversion {
+        grid-column: 1;
+        grid-row: 2;
+        display: grid;
+        grid-template-rows: repeat(8, 100px);
+        padding-bottom: 30px;
+    }
+
+    .conversion-texto {
+        width: 688px;
+        padding: 0;
+        grid-row: 1 / span 2;
+        padding: 40px 0;
+    }
+
+    #conversion-text {
+        width: 590px;
+    }
+
+    .conversion-info, .conversion-botones {
+        padding-left: 0;
+    }
+
+    .resultado {
+        width: 688px;
+        height: 133px;
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .resultado-info, .resultado-conversion {
+        height: auto;
+        padding: 32px;
+    }
+
+    .resultado-mensaje, .resultado-indicacion {
+        width: 100%;
+    }
+
+    .resultado-mensaje {
+        padding-top: 0;
+    }
+
+    .resultado-texto {
+        height: auto;
+    }
+
+    .resultado-copiar {
+        width: 100%;
+    }
+
+    #Image {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        max-width: 375px;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(auto-fill, 343px);
+        padding: 16px;
+    }
+
+    .logo, .conversion, .conversion-texto, #conversion-text, .resultado {
+        width: 343px;
+    }
+
+    .conversion {
+        grid-template-rows: repeat(4, 100px);
+        padding-bottom: 40px;
+    }
+
+    #conversion-text {
+        height: 300px;
+    }
+
+    .conversion-info {
+        padding-bottom: 16px;
+    }
+
+    .conversion-en, .conversion-des {
+        width: 343px;
+    }
+
+    .conversion-en {
+        margin: 0;
+        margin-bottom: 24px;
+    }
+}
