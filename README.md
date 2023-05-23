@@ -20,7 +20,7 @@ Desktop (1440x1024):
 Tablet (768x1174):
 ![Desktop](Images/readme/Tablet.png)
 
-Mobile (375x933):
+Mobile (375x933):                                                                                           
 ![Mobile](Images/readme/Mobile.png)
 
 ## 2. Qué construí
