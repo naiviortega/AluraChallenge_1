@@ -37,4 +37,4 @@ Implementar los conocimientos obtenidos a lo largo de los cursos brindados por l
 
 ## 4. Link a Demo
 
-Aquí puedes visualizar mi proyecto terminado: [Encriptador de Texto](https://naiviortega.github.io/AluraChallenge_1/)
+Aquí puedes visualizar mi proyecto terminado: [Encriptador de Texto](https://naiviortega.github.io/encriptador_texto/)
